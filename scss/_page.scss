@@ -1,0 +1,18 @@
+#hero-page {
+    padding:$section-space-lg 0 $section-space-md;
+    text-align: center;
+    line-height: 12px;
+
+    .title {
+       	font-size: $font-medium;
+        text-transform: uppercase;
+    }
+}
+
+.content-area {
+	background:$grey;
+}
+
+.entry-content {
+	padding:$section-space-lg 0;
+}

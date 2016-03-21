@@ -1,0 +1,124 @@
+body {
+	position:relative;
+	font-size: $font-default;
+	font-family: $primary-font;
+	background:$white;
+	color: $black;
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+
+.container-fluid {
+    padding-right: 8%;
+    padding-left: 8%;
+}
+
+.t-wrap {
+	display:table;
+	height:100%;
+	width:100%;
+}
+
+.t-content {
+	display:table-cell;
+	vertical-align:middle;
+}
+
+.hide-sm {
+	@media (min-width:180px) {
+		display: none;
+	}
+
+	@media (min-width:768px) {
+		display: block;
+	}
+}
+
+.show-sm {
+	@media (min-width:180px) {
+		display: block;
+	}
+
+	@media (min-width:768px) {
+		display: none;
+	}
+}
+
+/*Typography*/
+a {
+	&:focus, &:hover {
+		text-decoration:none;
+	}
+}
+
+h3 {
+	line-height: 40px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.title {
+	font-weight:bold;
+}
+
+.site-title {
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: bold;
+}
+
+input{
+	width:100%;
+	padding: $form-space-sm;
+}
+
+textarea {
+	height: 80px;
+    width: 100%;
+}
+
+/*Content*/
+.content-height {
+	height:$section-space-lg;
+}
+
+/*Button*/
+button, html input[type="button"], input[type="reset"], input[type="submit"], .btn {
+	background: transparent;
+	color: $default-blue;
+	border:1px solid $default-blue;
+	font-weight:bold;
+	letter-spacing:2.5px;
+	text-transform:uppercase;
+	@include border-radius(0);
+
+	&.active, &:active {
+    	-webkit-box-shadow: none;
+    	box-shadow: none;
+	}
+
+	&.active.focus, &.active:focus, &.focus, &:active.focus, &:active:focus, &:focus {
+    	outline: 0;
+    }
+}
+
+/*Image*/
+.img-full {
+	width:100%;
+}
+
+/*Gallery*/
+.su-custom-gallery {
+	.su-custom-gallery-slide {
+		img {
+			padding: 0;
+    		border: none;
+    		background: transparent;
+    		@include border-radius(0px);
+		}
+
+		span {
+			display:none;
+		}
+	}	
+}

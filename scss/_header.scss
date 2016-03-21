@@ -1,0 +1,161 @@
+.admin-bar {
+	.navbar-fixed-top {
+    	top: 31px;
+	}
+
+	.search-property {
+    	top: 83px;
+	}
+}
+
+header {
+	@include background-size(cover);
+		color: $white;
+
+	.title {
+		font-size:$font-large;
+
+		@media (min-width: 180px){
+			
+		}
+	}
+
+	.btn {
+		border:none;
+	}
+}
+
+.hero {
+	.title {
+		padding-top:$section-space-lg + 100;
+		margin-bottom:0;
+		font-family: $secondary-font;
+		letter-spacing: 5.9px;
+    	line-height: 60px;
+
+    	@media (min-width:180px) {
+			padding:0;
+			margin:0;
+			letter-spacing: 5px;
+    		line-height: 55px;
+    	}
+	}
+}
+
+.navbar {
+	background:$white;
+
+	a {
+		color:$black;
+	}
+
+	li {
+		a {
+			@media (min-width:180px) {
+				padding-left:0;
+    		}
+
+    		@media (min-width:768px) {
+				padding-left:20px;
+				padding-top: 18px;
+    		}
+		}		
+	}
+
+
+
+	h1 {
+		margin-top: 0;
+	}
+
+	.site-title {
+		margin:$section-space-xs + 4 0;
+    	margin-left: 15px;
+	}
+
+	.btn {
+		margin:12px 0 0;
+		font-size: $font-default;
+	}
+
+	.navbar-collapse {
+		&.pull-right {
+			@media (min-width:180px){
+				float:none !important;
+				border-top: 1px solid #000;
+			}
+
+			@media (min-width:768px){
+				float:right !important;
+				border-top:none;
+			}
+		}
+	}
+
+	.nav>li>a:focus, .nav>li>a:hover, .nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+		background: transparent;
+	}
+
+	.dropdown-menu {
+		background: $white;
+		border: none;
+    	border-radius: 0;
+    	-webkit-box-shadow: none;
+    	box-shadow: none;
+		
+		li {
+			a {
+				color: $black;
+				&:focus, &:hover {
+					background: $white;
+					color: $black;
+				}
+			}
+		}
+	}
+
+	.navbar-toggle {
+		margin-right: 0;
+    	margin-bottom: 0;
+    	margin-top: 12px;
+		.icon-bar {
+    		background: $black;
+		}
+	}
+}
+
+.search-property {
+	display:none;
+	background: $default-blue;
+	color: $white;
+	z-index: 2000;
+    position: fixed;
+    right: 0;
+    width: 100%;
+    top: 0;
+    height:100%;
+    color:$white;
+
+    a {color:$white;}
+
+    .wrap {
+    	padding:$section-space-md;
+    }
+
+    @media (min-width:180px) {
+		max-width: 100%;
+    }
+
+    @media (min-width:768px) {
+		max-width: 530px;
+    }
+
+    form {
+    	padding:$section-space-md;
+    	padding-left:40px;
+    	padding-right:40px;
+    	color:$black;
+    	font-size: $font-default;
+    }
+}
+

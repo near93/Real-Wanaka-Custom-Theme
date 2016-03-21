@@ -1,0 +1,60 @@
+$black: #333;
+$white: #fff;
+$grey: #F5F1ED;
+
+$default-orange: #cc3400;
+$medium-orange: #f85117;
+$light-orange: #ff7a4d;
+
+$default-yellow: #cc7200;
+$medium-yellow: #f89417;
+$light-yellow: #ffb04d;
+
+$default-blue: #085282;
+$medium-blue: #17699e;
+$light-blue: #3879a4;
+
+$default-green: #008e4a;
+$medium-green: #10ad61;
+$light-green: #36b276;
+
+$primary-font: 'Hind Siliguri', sans-serif;
+$secondary-font: 'Kanit', sans-serif;
+
+$font-default: 16px;
+$font-large: 50px;
+$font-medium: 30px;
+$font-small: 12px;
+
+$property-align:center;
+$property-weight:bold;
+
+$section-space-lg: 80px;
+$section-space-md: 40px;
+$section-space-sm: 20px;
+$section-space-xs: 10px;
+
+$form-space-sm: 10px 20px;
+
+$title-space: 30px 0 0;
+
+@mixin background-size($bg-size) {
+	-webkit-background-size: $bg-size !important; 
+ 	-moz-background-size: $bg-size !important; 
+ 	-o-background-size: $bg-size !important; 
+ 	background-size: $bg-size !important;
+}
+
+@mixin transition($effect){
+	-webkit-transition:$effect;
+	-moz-transition: $effect;
+	-ms-transition: $effect;
+	-o-transition: $effect;
+	transition: $effect;
+}
+
+@mixin border-radius($radius){
+	-webkit-border-radius: $radius;
+	border-radius: $radius;
+}
+

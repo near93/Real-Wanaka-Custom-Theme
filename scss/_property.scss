@@ -1,0 +1,55 @@
+.sale-date {
+	span {
+		font-size:16px;
+	}
+}
+
+/*Property Form*/
+.epl-search-forms-wrapper{
+	
+	&.epl-search-default {
+    	max-width: 100%;
+	}
+	.epl-search-form 
+		&.epl-search-other {
+    		display: none;
+		}
+}
+
+/*Properties*/
+.property-content {
+	text-align: $property-align;
+
+	.preview {
+		@include background-size(cover);
+		height:200px;	
+
+		.inner-content {
+			text-align: $property-align;
+			background:$default-blue;
+			color:$white;
+
+			@media (min-width:180px) {
+				opacity: 1;
+    		}
+
+			@media (min-width:1024px) {
+				opacity: 0;
+    		}
+
+			@include transition(opacity .25s ease);
+
+			&:hover {
+				opacity: 1;
+			}
+
+			.btn {
+				font-size: $font-default;
+				text-transform: uppercase;
+				border: 1px solid $white;
+				color: $white;
+    			letter-spacing: 3.5px;
+			}
+		}
+	}
+}

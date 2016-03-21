@@ -1,0 +1,144 @@
+#hero-home {
+    padding:$section-space-lg 0 $section-space-md;
+    
+        @media (min-width:100px){
+            padding: $section-space-lg + 120 0 $section-space-md + 40;
+        }
+    }
+
+#featured-property {
+	position: relative;
+    padding: $section-space-lg 0;
+
+    .container {
+        position: relative;
+
+        @media (min-width:180px){
+            width: 100%;
+            padding: 0;
+        }
+
+        @media (min-width:874px){
+            width: 690px;
+        }
+
+        @media (min-width:910px){
+            width:87%;
+        }
+
+        @media (min-width:1000px){
+            width: 690px;
+        }
+
+        @media (min-width:1290px){
+            width:100%;
+        }
+    }
+
+    .col-xs-9 {
+        @media (min-width:180px){
+            width:100%;
+        }
+
+        @media (min-width:700px){
+            width:75%;         
+        }
+    }
+
+	h1 {
+        &.title {
+            margin-top: 0;
+        }
+    }
+
+	.view-properties {
+		@media (min-width:180px){
+	    	margin-top: $section-space-xs + 5;
+		}
+
+		@media (min-width:687px){
+	    	margin-top: 0;
+		}		
+	}
+
+    .hide-sm {
+        @media (min-width:709px){
+            display: block;
+        }
+    }
+
+    .show-sm {
+        text-align: center;
+
+        @media (min-width:709px){
+            display: none;
+        }
+    }
+
+    .bx-wrapper {
+        @media (min-width:180px){
+            display: none;
+        }
+
+        @media (min-width:709px){
+            display: block;
+        }
+    }
+
+	.bx-viewport {
+		z-index:500;
+	}
+
+	.bx-controls {
+		position: absolute;
+    	top: 25%;
+    	bottom: 0;
+    	width: 100%;
+    	left: 0;
+    	right: 0;
+
+    	a {
+    		font-size: $font-medium;
+    		i {
+    			color: $black;
+    		}
+    	}
+
+    	.bx-prev {
+    		left: 106px;
+    		position: absolute;
+
+            @media (min-width:910px){
+                left: -30px;
+            }
+
+            @media (min-width:1290px){
+                left:12px;
+            }
+    	}
+
+    	.bx-next {
+    	   right: 106px;
+    	   position: absolute;
+
+            @media (min-width:910px){
+                right: -30px;
+            }
+
+            @media (min-width:1290px){
+                right:12px;
+            }
+    	}
+	}
+}
+
+#property-alerts {
+	background:$default-blue;
+    color: $white;
+	padding: $section-space-md 0;
+
+    button {
+        color: #fff;
+        border: 1px solid #fff;
+    }
+}
