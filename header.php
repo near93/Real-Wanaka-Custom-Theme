@@ -37,7 +37,14 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-					<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+					<div class="logo">
+                        <p class="site-title">
+                            <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+                            <img src="<?php echo get_bloginfo('template_directory');?>/img/donnelly-logo.png"/>
+                            </a>
+                        </p>                        
+                    </div>
+
                 </div>
 
                 <?php

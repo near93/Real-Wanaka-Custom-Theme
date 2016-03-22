@@ -123,7 +123,8 @@ function realwanaka_scripts() {
 	wp_enqueue_style('secondary-font', 'https://fonts.googleapis.com/css?family=Kanit:400,700' );
 
 	wp_enqueue_style('normalize', get_template_directory_uri() . '/css/normalize.css' );
-	wp_enqueue_style('style', get_template_directory_uri() . '/css/style.css' );
+
+	wp_enqueue_style( 'realwanaka-style', get_stylesheet_uri() );	
 
 	wp_enqueue_script( 'jquery-1.11', 'https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js', array( 'jquery' ) );
 	wp_enqueue_script( 'bootstrap-js', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js', array( 'jquery' ) );

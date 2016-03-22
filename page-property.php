@@ -1,8 +1,9 @@
 <?php
 /**
- * The template for displaying all single posts.
+ * Template Name: Property Page
  *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
+ *
+ * @link https://codex.wordpress.org/Template_Hierarchy
  *
  * @package realwanaka
  */
@@ -14,14 +15,11 @@ get_header(); ?>
 			<div class="row">
 				<div class="col-sm-8">
 					<main id="main" class="site-main" role="main">
-
-						<?php
-						while ( have_posts() ) : the_post();
-
-							get_template_part( 'template-parts/content');
-
-						endwhile; // End of the loop.
-						?>
+			<?php
+			while ( have_posts() ) : the_post();
+				get_template_part( 'template-parts/content', 'property' );
+			endwhile; // End of the loop.
+			?>
 
 					</main><!-- #main -->					
 				</div>
@@ -34,3 +32,4 @@ get_header(); ?>
 
 <?php
 get_footer();
+

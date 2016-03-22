@@ -46,8 +46,10 @@ body {
 
 /*Typography*/
 a {
+	color:$default-blue;
 	&:focus, &:hover {
 		text-decoration:none;
+		color:$medium-blue;
 	}
 }
 
@@ -75,6 +77,13 @@ textarea {
     text-transform: uppercase;
     letter-spacing: 2.5px;
     font-weight: bold;
+}
+
+.logo {
+	img {
+		width: 150px;
+    	height: auto;
+	}
 }
 
 /*Content*/
