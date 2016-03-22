@@ -57,16 +57,6 @@ h3 {
     letter-spacing: 2px;
 }
 
-.title {
-	font-weight:bold;
-}
-
-.site-title {
-    text-transform: uppercase;
-    letter-spacing: 2.5px;
-    font-weight: bold;
-}
-
 input{
 	width:100%;
 	padding: $form-space-sm;
@@ -77,13 +67,23 @@ textarea {
     width: 100%;
 }
 
+.title {
+	font-weight:bold;
+}
+
+.site-title {
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: bold;
+}
+
 /*Content*/
 .content-height {
 	height:$section-space-lg;
 }
 
 /*Button*/
-button, html input[type="button"], input[type="reset"], input[type="submit"], .btn {
+button, html input[type="button"], input[type="reset"], input[type="submit"], .btn{
 	background: transparent;
 	color: $default-blue;
 	border:1px solid $default-blue;
@@ -91,6 +91,7 @@ button, html input[type="button"], input[type="reset"], input[type="submit"], .b
 	letter-spacing:2.5px;
 	text-transform:uppercase;
 	@include border-radius(0);
+	@include transition(all 0.5s ease);
 
 	&.active, &:active {
     	-webkit-box-shadow: none;
@@ -100,6 +101,23 @@ button, html input[type="button"], input[type="reset"], input[type="submit"], .b
 	&.active.focus, &.active:focus, &.focus, &:active.focus, &:active:focus, &:focus {
     	outline: 0;
     }
+
+    &:hover {
+    	background-color: $medium-blue;
+    	border-color: $default-blue;
+    	color:$white;
+	}
+}
+
+/*Social Links*/
+.social {
+	.btn {
+    	width: 35px;
+    	height: 35px;
+    	padding: 7px 9.5px;
+    	@include border-radius(60px);
+    	text-align: center;
+	}
 }
 
 /*Image*/

@@ -26,10 +26,14 @@
                      
                         <ul class="contact social list-unstyled list-inline">
                             <li>
-                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#" class="btn">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
                             </li> 
                             <li>
-                                <a href="mailto:sharondonnelly@realwanaka.co.nz"><i class="fa fa-envelope-o"></i></a>
+                                <a href="mailto:sharondonnelly@realwanaka.co.nz" class="btn">
+                                <i class="fa fa-envelope-o"></i>
+                                </a>
                             </li>                                           
                         </ul>                          
                     </div>

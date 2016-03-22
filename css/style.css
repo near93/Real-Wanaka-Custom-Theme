@@ -42,16 +42,16 @@ a:focus, a:hover { text-decoration: none; }
 h3 { line-height: 40px; font-weight: bold; letter-spacing: 2px; }
 
 /* line 60, ../scss/_body.scss */
-.title { font-weight: bold; }
-
-/* line 64, ../scss/_body.scss */
-.site-title { text-transform: uppercase; letter-spacing: 2.5px; font-weight: bold; }
-
-/* line 70, ../scss/_body.scss */
 input { width: 100%; padding: 10px 20px; }
 
-/* line 75, ../scss/_body.scss */
+/* line 65, ../scss/_body.scss */
 textarea { height: 80px; width: 100%; }
+
+/* line 70, ../scss/_body.scss */
+.title { font-weight: bold; }
+
+/* line 74, ../scss/_body.scss */
+.site-title { text-transform: uppercase; letter-spacing: 2.5px; font-weight: bold; }
 
 /*Content*/
 /* line 81, ../scss/_body.scss */
@@ -59,20 +59,26 @@ textarea { height: 80px; width: 100%; }
 
 /*Button*/
 /* line 86, ../scss/_body.scss */
-button, html input[type="button"], input[type="reset"], input[type="submit"], .btn { background: transparent; color: #085282; border: 1px solid #085282; font-weight: bold; letter-spacing: 2.5px; text-transform: uppercase; -webkit-border-radius: 0; border-radius: 0; }
-/* line 95, ../scss/_body.scss */
+button, html input[type="button"], input[type="reset"], input[type="submit"], .btn { background: transparent; color: #085282; border: 1px solid #085282; font-weight: bold; letter-spacing: 2.5px; text-transform: uppercase; -webkit-border-radius: 0; border-radius: 0; -webkit-transition: all 0.5s ease; -moz-transition: all 0.5s ease; -ms-transition: all 0.5s ease; -o-transition: all 0.5s ease; transition: all 0.5s ease; }
+/* line 96, ../scss/_body.scss */
 button.active, button:active, html input[type="button"].active, html input[type="button"]:active, input[type="reset"].active, input[type="reset"]:active, input[type="submit"].active, input[type="submit"]:active, .btn.active, .btn:active { -webkit-box-shadow: none; box-shadow: none; }
-/* line 100, ../scss/_body.scss */
+/* line 101, ../scss/_body.scss */
 button.active.focus, button.active:focus, button.focus, button:active.focus, button:active:focus, button:focus, html input[type="button"].active.focus, html input[type="button"].active:focus, html input[type="button"].focus, html input[type="button"]:active.focus, html input[type="button"]:active:focus, html input[type="button"]:focus, input[type="reset"].active.focus, input[type="reset"].active:focus, input[type="reset"].focus, input[type="reset"]:active.focus, input[type="reset"]:active:focus, input[type="reset"]:focus, input[type="submit"].active.focus, input[type="submit"].active:focus, input[type="submit"].focus, input[type="submit"]:active.focus, input[type="submit"]:active:focus, input[type="submit"]:focus, .btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus { outline: 0; }
+/* line 105, ../scss/_body.scss */
+button:hover, html input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover, .btn:hover { background-color: #17699e; border-color: #085282; color: #fff; }
+
+/*Social Links*/
+/* line 114, ../scss/_body.scss */
+.social .btn { width: 35px; height: 35px; padding: 7px 9.5px; -webkit-border-radius: 60px; border-radius: 60px; text-align: center; }
 
 /*Image*/
-/* line 106, ../scss/_body.scss */
+/* line 124, ../scss/_body.scss */
 .img-full { width: 100%; }
 
 /*Gallery*/
-/* line 113, ../scss/_body.scss */
+/* line 131, ../scss/_body.scss */
 .su-custom-gallery .su-custom-gallery-slide img { padding: 0; border: none; background: transparent; -webkit-border-radius: 0px; border-radius: 0px; }
-/* line 120, ../scss/_body.scss */
+/* line 138, ../scss/_body.scss */
 .su-custom-gallery .su-custom-gallery-slide span { display: none; }
 
 /* line 2, ../scss/_header.scss */
