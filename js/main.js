@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  $('.bxslider').bxSlider({
+  $('.epl-shortcode-listing-feature').bxSlider({
     minSlides: 2,
     maxSlides: 3,
     moveSlides: 2,
@@ -11,12 +11,12 @@ $(document).ready(function(){
   });
 });
 
-	$("#property-search-btn").click(function(){
-		$(this).toggleClass("active");
-		$(".search-property").animate({width: 'toggle'}, 300);
-	});
+$("#property-search-btn").click(function(){
+	$(this).toggleClass("active");
+	$(".search-property").animate({width: 'toggle'}, 300);
+});
 
-	$(".close-search").click(function(){
-		$(".search-property").animate({width: 'toggle'}, 300);
-	});
+$(".close-search").click(function(){
+	$(".search-property").animate({width: 'toggle'}, 300);
+});
 

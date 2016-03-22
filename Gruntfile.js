@@ -20,18 +20,18 @@ module.exports = function(grunt) {
       }
     },
 
-    /*uglify: {
+    uglify: {
       my_target: {
         files: {
           'js/main.min.js': ['js/main.js']
         }
       }
-    },*/
+    },
 
     watch: {
       css: {
         files: ['*.php', 'scss/*.scss', 'template-parts/*.php'],
-        tasks: ['sass', 'compass', /*'uglify'*/]
+        tasks: ['sass', 'compass', 'uglify']
       },
        scripts: {
         files: ['js/*.js']
@@ -44,7 +44,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-compass');
-  //grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
 
   // Default task(s).
   //grunt.registerTask('dev', ['sass', 'watch']);

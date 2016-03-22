@@ -26,7 +26,7 @@
                 </div>
                 
             <div class="container">
-                <ul class="featured-list bxslider">
+                <!--<ul class="featured-list bxslider">
                     <li>
                         <article class="property-content">
                             <div class="preview" style="background: url('<?php echo get_bloginfo('template_directory');?>/img/house1.jpg') no-repeat center center;">
@@ -123,7 +123,9 @@
                             <p class="address">Unit 8, 146 Anderson Road</p>
                         </article>                    
                     </li>
-                </ul>
+                </ul>-->
+
+                <?php echo do_shortcode('[listing_feature class="bxslider"]');?>
 
                 <section class="show-sm">
                     <ul class="featured-list list-unstyled">
