@@ -1,10 +1,28 @@
+.home {
+    .site-main {
+        .title {
+            font-weight: normal;
+        }
+    }
+}
+
 #hero-home {
     padding:$section-space-lg 0 $section-space-md;
     
-        @media (min-width:100px){
-            padding: $section-space-lg + 120 0 $section-space-md + 40;
-        }
+    @media (min-width:100px){
+        padding: $section-space-lg + 120 0 $section-space-md + 40;
     }
+}
+
+#about {
+    background: $white;
+    padding: $section-space-lg 0;
+
+    .title {
+        line-height: 45px;
+        margin-bottom: $section-space-md;
+    }
+}
 
 #featured-property {
 	position: relative;
@@ -75,15 +93,7 @@
         }
     }
 
-    .bx-wrapper {
-        @media (min-width:180px){
-            display: none;
-        }
 
-        @media (min-width:709px){
-            display: block;
-        }
-    }
 
 	.bx-viewport {
 		z-index:500;

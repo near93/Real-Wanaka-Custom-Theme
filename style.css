@@ -25,6 +25,16 @@ body {
   padding-right: 8%;
   padding-left: 8%; }
 
+@media (min-width: 180px) {
+  .container {
+    width: 92%; } }
+@media (min-width: 500px) {
+  .container {
+    width: 70%; } }
+@media (min-width: 1200px) {
+  .container {
+    width: 1020px; } }
+
 .t-wrap {
   display: table;
   height: 100%;
@@ -114,6 +124,13 @@ button, html input[type="button"], input[type="reset"], input[type="submit"], .b
     border-color: #26908C;
     color: #fff; }
 
+/*Tabs*/
+.nav-pills > li + li {
+  margin-left: 0px; }
+
+.nav-pills > li.active > a, .nav-pills > li.active > a:focus, .nav-pills > li.active > a:hover {
+  background-color: #68C8C4; }
+
 /*Social Links*/
 .social .btn {
   width: 35px;
@@ -172,7 +189,6 @@ header {
     color: #333; }
   .navbar li a {
     text-transform: uppercase;
-    font-weight: bold;
     letter-spacing: 2px;
     padding: 19.3px 19px; }
   .navbar h1 {
@@ -301,11 +317,21 @@ header {
         color: #fff;
         letter-spacing: 3.5px; }
 
+.home .site-main .title {
+  font-weight: normal; }
+
 #hero-home {
   padding: 80px 0 40px; }
   @media (min-width: 100px) {
     #hero-home {
       padding: 200px 0 80px; } }
+
+#about {
+  background: #fff;
+  padding: 80px 0; }
+  #about .title {
+    line-height: 45px;
+    margin-bottom: 40px; }
 
 #featured-property {
   position: relative;
@@ -350,12 +376,6 @@ header {
     @media (min-width: 709px) {
       #featured-property .show-sm {
         display: none; } }
-  @media (min-width: 180px) {
-    #featured-property .bx-wrapper {
-      display: none; } }
-  @media (min-width: 709px) {
-    #featured-property .bx-wrapper {
-      display: block; } }
   #featured-property .bx-viewport {
     z-index: 500; }
   #featured-property .bx-controls {
@@ -417,14 +437,5 @@ footer {
       padding: 40px 0; } }
   footer .site-title {
     margin-top: 0; }
-  @media (min-width: 180px) {
-    footer .container {
-      width: 92%; } }
-  @media (min-width: 500px) {
-    footer .container {
-      width: 70%; } }
-  @media (min-width: 1200px) {
-    footer .container {
-      width: 900px; } }
 
 /*# sourceMappingURL=style.css.map */

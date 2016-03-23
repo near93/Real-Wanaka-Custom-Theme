@@ -1,5 +1,7 @@
 $(document).ready(function(){
-  $('.epl-shortcode-listing-feature').bxSlider({
+  $(".epl-shortcode-listing-feature").addClass("bxSlider"); 
+  
+  $('.bxSlider').bxSlider({
     minSlides: 2,
     maxSlides: 3,
     moveSlides: 2,
@@ -9,6 +11,8 @@ $(document).ready(function(){
     nextText: '<i class="fa fa-caret-right"></i>',
     prevText: '<i class="fa fa-caret-left"></i>'
   });
+
+  $(".show-sm .epl-shortcode-listing-feature").removeClass("bxSlider");
 });
 
 $("#property-search-btn").click(function(){

@@ -17,7 +17,7 @@
         <div class="container">
             <article class="inner-content">
                 <div class="row">
-                    <div class="col-xs-3 col-sm-4">
+                    <div class="col-xs-12 col-sm-4">
                         <h3 class="site-title">
                             <?php bloginfo( 'name' ); ?>
                         </h2>
@@ -38,7 +38,7 @@
                         </ul>                          
                     </div>
 
-                    <div class="col-xs-9 col-sm-8">
+                    <div class="col-xs-12 col-sm-8">
                         <p> Disclaimer: The information on this website has been supplied to us and whilst we have no reason to doubt the accuracy, we cannot guarantee it. All interested parties should make their own inquiries to verify the information.
                         </p> 
                         <p><?php bloginfo('name');?> <?php echo date('Y'); ?></p>    

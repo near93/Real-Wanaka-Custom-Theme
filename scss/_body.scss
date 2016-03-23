@@ -13,6 +13,20 @@ body {
     padding-left: 8%;
 }
 
+.container {
+	@media (min-width:180px){
+		width: 92%;
+	}
+
+	@media (min-width:500px){
+    	width: 70%;
+	}
+
+	@media (min-width:1200px){
+		width:1020px;
+	}
+}
+
 .t-wrap {
 	display:table;
 	height:100%;
@@ -49,7 +63,7 @@ a {
 	color:$default-blue;
 	@include transition(all 0.5s ease);
 	
-	&:focus, &:hover {
+	&:focus, &:hover{
 		text-decoration:none;
 		color:$medium-blue;
 	}
@@ -118,6 +132,15 @@ button, html input[type="button"], input[type="reset"], input[type="submit"], .b
     	border-color: $default-blue;
     	color:$white;
 	}
+}
+
+/*Tabs*/
+.nav-pills>li+li {
+    margin-left: 0px;
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+    background-color: $medium-blue;
 }
 
 /*Social Links*/

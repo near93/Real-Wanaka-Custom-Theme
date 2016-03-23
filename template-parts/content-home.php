@@ -10,7 +10,56 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-    <!-- THIS WILL BE A RESPONSIVE CAROUSEL SLIDER-->
+    <section id="about" class="text-center">
+        <div class="container">
+            <article class="inner-content">
+                <h1 class="title">Sharon Donnelly's business is the sale of Real Estate in Wanaka, New Zealand.</h1>
+                <ul class="nav nav-pills row">
+                    <li class="col-xs-3 active icon">
+                        <a href="#specialty" data-toggle="tab">
+                            <h2><i class="fa fa-home"></i></h2>
+                            <p class="text-uppercase">Specialty</p>
+                        </a>
+                    </li>
+                    <li class="col-xs-3 icon">
+                        <a href="#the-right-result" data-toggle="tab">
+                            <h2><i class="fa fa-check-square-o"></i></h2>
+                            <p class="text-uppercase">The Right Result</p>
+                        </a>
+                    </li>
+                    <li class="col-xs-3 icon">
+                        <a href="#return-on-investment" data-toggle="tab">
+                            <h2><i class="fa fa-money"></i></h2>
+                            <p class="text-uppercase">Return on Investment</p>
+                        </a>
+                    </li>
+                    <li class="col-xs-3 icon">
+                        <a href="#personal-service" data-toggle="tab">
+                            <h2><i class="fa fa-user"></i></h2>
+                            <p class="text-uppercase">Personal Service</p>
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div class="tab-pane active" id="specialty">
+                        <p>Her speciality is in property search and acquisition, finding and securing the best Real Estate - from family homes, investment properties, town houses and apartments, farms, commercial buildings, to land and business opportunities.</p>
+                    </div>
+                    <div class="tab-pane" id="the-right-result">
+                        <p>Sharon's comprehensive knowledge of the market means that she is able to advise on the current market value of properties, as well as price differentials between areas. She can give you the pros and cons of each property, its surroundings, local planning factors, and its potential for improvement.</p>
+                    </div>
+                    <div class="tab-pane" id="return-on-investment">
+                        <p>Real Estate in Wanaka as an investment has proved to be one of the smartest purchases made by investors. The return on your investment can be not only from capital appreciation on the property over time but also from the rental income generated.</p>
+                    </div>
+                    <div class="tab-pane" id="personal-service">
+                        <p>With an approach that is both highly professional and completely personal Sharon is continually informed about properties and land before they come to the market, and about those that are not on the open market at all.</p>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
     <section id="featured-property">
         <div class="container-fluid">
                 <div class="row">
@@ -26,127 +75,10 @@
                 </div>
                 
             <div class="container">
-                <!--<ul class="featured-list bxslider">
-                    <li>
-                        <article class="property-content">
-                            <div class="preview" style="background: url('<?php echo get_bloginfo('template_directory');?>/img/house1.jpg') no-repeat center center;">
-                                <article class="t-wrap inner-content">
-                                    <div class="t-content">
-                                        <h3 class="sale-date">
-                                            Deadline Sale<br/>
-                                            <span>4pm 14 April (unless sold prior)</span>
-                                        </h3>
-                                        <a href="#" class="btn btn-primary more">view</a>
-                                    </div>
-                                </article>
-                            </div>
-                            <h3 class="title">Family home or rental investment</h3>
-                            <p class="address">71 Kings Drive, Wanaka</p>
-                        </article>
-                    </li>
-                    <li>
-                        <article class="property-content">
-                            <div class="preview" style="background: url('<?php echo get_bloginfo('template_directory');?>/img/house2.jpg') no-repeat center center;">
-                                <article class="t-wrap inner-content">
-                                    <div class="t-content">
-                                        <h3 class="sale-date">
-                                            Deadline Sale<br/>
-                                            <span>4pm, 8 Apr (unless sold prior)</span>
-                                        </h3>
-                                        <a href="#" class="btn btn-primary more">view</a> 
-                                    </div>
-                                </article>
-                            </div>
-                            <h3 class="title">Modern spacious family home</h3>
-                            <p class="address">22 Kelliher Drive, Wanaka</p>
-                        </article>                    
-                    </li>
-                    <li>
-                        <article class="property-content">
-                            <div class="preview" style="background: url('<?php echo get_bloginfo('template_directory');?>/img/house3.jpg') no-repeat center center;">
-                                <article class="t-wrap inner-content">
-                                    <div class="t-content">
-                                        <h3 class="price">$609,000</h3>
-                                        <a href="#" class="btn btn-primary more">view</a> 
-                                    </div>
-                                </article>
-                            </div>
-                            <h3 class="title">Ideal holiday pad or rental investment</h3>
-                            <p class="address">Unit 8, 146 Anderson Road</p>
-                        </article>                    
-                    </li>
-                    <li>
-                        <article class="property-content">
-                            <div class="preview" style="background: url('<?php echo get_bloginfo('template_directory');?>/img/house1.jpg') no-repeat center center;">
-                                <article class="t-wrap inner-content">
-                                    <div class="t-content">
-                                        <h3 class="sale-date">
-                                            Deadline Sale<br/>
-                                            <span>4pm 14 April (unless sold prior)</span>
-                                        </h3>
-                                        <a href="#" class="btn btn-primary more">view</a>
-                                    </div>
-                                </article>
-                            </div>
-                            <h3 class="title">HOUSE 4</h3>
-                            <p class="address">71 Kings Drive, Wanaka</p>
-                        </article>
-                    </li>
-                    <li>
-                        <article class="property-content">
-                            <div class="preview" style="background: url('<?php echo get_bloginfo('template_directory');?>/img/house2.jpg') no-repeat center center;">
-                                <article class="t-wrap inner-content">
-                                    <div class="t-content">
-                                        <h3 class="sale-date">
-                                            Deadline Sale<br/>
-                                            <span>4pm, 8 Apr (unless sold prior)</span>
-                                        </h3>
-                                        <a href="#" class="btn btn-primary more">view</a> 
-                                    </div>
-                                </article>
-                            </div>
-                            <h3 class="title">HOUSE 5</h3>
-                            <p class="address">22 Kelliher Drive, Wanaka</p>
-                        </article>                    
-                    </li>
-                    <li>
-                        <article class="property-content">
-                            <div class="preview" style="background: url('<?php echo get_bloginfo('template_directory');?>/img/house3.jpg') no-repeat center center;">
-                                <article class="t-wrap inner-content">
-                                    <div class="t-content">
-                                        <h3 class="price">$609,000</h3>
-                                        <a href="#" class="btn btn-primary more">view</a> 
-                                    </div>
-                                </article>
-                            </div>
-                            <h3 class="title">HOUSE 6</h3>
-                            <p class="address">Unit 8, 146 Anderson Road</p>
-                        </article>                    
-                    </li>
-                </ul>-->
-
-                <?php echo do_shortcode('[listing_feature class="bxslider"]');?>
+                <?php echo do_shortcode('[listing_feature]');?>
 
                 <section class="show-sm">
-                    <ul class="featured-list list-unstyled">
-                        <li>
-                            <article class="property-content">
-                            <div class="preview" style="background: url('<?php echo get_bloginfo('template_directory');?>/img/house1.jpg') no-repeat center center;">
-                                <article class="t-wrap inner-content">
-                                    <div class="t-content">
-                                        <h3 class="sale-date">
-                                            Deadline Sale<br/>
-                                            <span>4pm 14 April (unless sold prior)</span>
-                                        </h3>
-                                        <a href="#" class="btn btn-primary more">view</a>
-                                    </div>
-                                </article>
-                            </div>
-                            <h3 class="title">Family home or rental investment</h3>
-                            <p class="address">71 Kings Drive, Wanaka</p>
-                        </article>
-                        </li>
-                    </ul>
+                    <?php echo do_shortcode('[listing_feature limit="1"]');?>
                     <a href="#" class="view-properties btn btn-primary text-center">View all</a>
                 </section>    
             </div>             
