@@ -47,6 +47,8 @@ body {
 /*Typography*/
 a {
 	color:$default-blue;
+	@include transition(all 0.5s ease);
+	
 	&:focus, &:hover {
 		text-decoration:none;
 		color:$medium-blue;

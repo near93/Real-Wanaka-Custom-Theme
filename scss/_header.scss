@@ -51,18 +51,12 @@ header {
 
 	li {
 		a {
-			@media (min-width:180px) {
-				padding-left:0;
-    		}
-
-    		@media (min-width:768px) {
-				padding-left:20px;
-				padding-top: 18px;
-    		}
+			text-transform: uppercase;
+    		font-weight: bold;
+    		letter-spacing: 2px;
+    		padding: 19.3px 19px;
 		}		
 	}
-
-
 
 	h1 {
 		margin-top: 0;
@@ -94,6 +88,7 @@ header {
 
 	.nav>li>a:focus, .nav>li>a:hover, .nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
 		background: transparent;
+		color:$medium-blue;
 	}
 
 	.dropdown-menu {
@@ -108,7 +103,7 @@ header {
 				color: $black;
 				&:focus, &:hover {
 					background: $white;
-					color: $black;
+					color: $medium-blue;
 				}
 			}
 		}

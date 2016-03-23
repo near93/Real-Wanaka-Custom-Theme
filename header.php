@@ -93,7 +93,7 @@
     <div class="search-property slidetoggle">
         <div class="wrap">
             <h1><a href="#" class="close-search"><i class="fa fa-times"></i></a></h1>
-            <!--<?php echo do_shortcode( '[listing_search]' );?>-->
+            <?php echo do_shortcode( '[listing_search]' );?>
         </div>
     </div>
 
