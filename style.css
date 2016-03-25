@@ -83,6 +83,12 @@ textarea {
   height: 80px;
   width: 100%; }
 
+.epl-search-form .epl-search-label {
+  font-size: 16px;
+  font-weight: normal; }
+.epl-search-form .epl-search-other {
+  display: none; }
+
 .title {
   font-weight: bold; }
 
@@ -154,10 +160,55 @@ button, html input[type="button"], input[type="reset"], input[type="submit"], .b
 .su-custom-gallery .su-custom-gallery-slide span {
   display: none; }
 
+#fancybox-title-over {
+  display: none !important; }
+
+figure {
+  margin: 5px; }
+
+.gallery {
+  margin-bottom: 1.5em; }
+  .gallery img {
+    width: 100%;
+    height: auto; }
+
+.gallery-item {
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  width: 100%; }
+
+.gallery-columns-2 .gallery-item {
+  max-width: 50%; }
+
+.gallery-columns-3 .gallery-item {
+  max-width: 33.33%; }
+
+.gallery-columns-4 .gallery-item {
+  max-width: 22%; }
+
+.gallery-columns-5 .gallery-item {
+  max-width: 20%; }
+
+.gallery-columns-6 .gallery-item {
+  max-width: 16.66%; }
+
+.gallery-columns-7 .gallery-item {
+  max-width: 14.28%; }
+
+.gallery-columns-8 .gallery-item {
+  max-width: 12.5%; }
+
+.gallery-columns-9 .gallery-item {
+  max-width: 11.11%; }
+
+.gallery-caption {
+  display: block; }
+
 .admin-bar .navbar-fixed-top {
   top: 31px; }
 .admin-bar .search-property {
-  top: 90px; }
+  top: 91px; }
 
 header {
   -webkit-background-size: cover !important;
@@ -221,6 +272,9 @@ header {
       .navbar .dropdown-menu li a:focus, .navbar .dropdown-menu li a:hover {
         background: #fff;
         color: #68C8C4; }
+    .navbar .dropdown-menu > .active > a, .navbar .dropdown-menu > .active > a:focus, .navbar .dropdown-menu > .active > a:hover {
+      background-color: #68C8C4;
+      color: #fff; }
   .navbar .navbar-toggle {
     margin-right: 0;
     margin-bottom: 0;
@@ -230,19 +284,19 @@ header {
 
 .search-property {
   display: none;
-  background: #26908C;
+  background: #98E2DF;
   color: #fff;
   z-index: 2000;
   position: fixed;
   right: 0;
   width: 100%;
-  top: 0;
+  top: 60px;
   height: 100%;
   color: #fff; }
   .search-property a {
     color: #fff; }
   .search-property .wrap {
-    padding: 40px; }
+    padding: 60px 40px; }
   @media (min-width: 180px) {
     .search-property {
       max-width: 100%; } }
@@ -250,9 +304,6 @@ header {
     .search-property {
       max-width: 530px; } }
   .search-property form {
-    padding: 40px;
-    padding-left: 40px;
-    padding-right: 40px;
     color: #333;
     font-size: 16px; }
 
@@ -429,6 +480,14 @@ header {
 
 .entry-content, .widget-area {
   padding: 80px 0; }
+
+.property .entry-content {
+  padding: 0; }
+  .property .entry-content .property-box img {
+    width: 100%; }
+
+.epl-tab-section {
+  margin-top: 0; }
 
 footer {
   padding: 80px 0; }

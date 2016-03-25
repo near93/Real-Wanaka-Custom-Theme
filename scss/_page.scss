@@ -16,3 +16,18 @@
 .entry-content, .widget-area{
 	padding:$section-space-lg 0;
 }
+
+.property {
+	.entry-content {
+    	padding: 0;
+		.property-box {
+			img {
+    			width: 100%;
+			}
+		}
+	}
+}
+
+.epl-tab-section {
+    margin-top: 0;
+}

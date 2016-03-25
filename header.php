@@ -75,12 +75,34 @@
                     </div>
                 </div>
             </section>
+        <?php } elseif (is_404()) {?>
+            <section id="hero-page" class="hero">
+                <div class="container-fluid">
+                    <article class="inner-content">
+                        <h2 class="title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'realwanaka' ); ?></h2>
+                    </article>                        
+                </div>
+            </section> 
+
+        <?php } elseif (is_archive()) {?>
+            <section id="hero-page" class="hero">
+                <div class="container-fluid">
+                    <article class="inner-content">
+                        <h2 class="title">
+                            <?php
+                                the_archive_title( '<h1 class="page-title">', '</h1>' );
+                                the_archive_description( '<div class="taxonomy-description">', '</div>' );
+                            ?>
+                        </h2>
+                    </article>                        
+                </div>
+            </section> 
+
         <?php } else { ?>
             <section id="hero-page" class="hero">
                 <div class="container-fluid">
                     <article class="inner-content">
-                        <h2 class="title"><?php the_title(); ?></h2>
-                        <span class="breadcrumbs">Home / Page Title</span>  
+                        <h2 class="title"><?php the_title(); ?></h2> 
                     </article>                        
                 </div>
             </section>
@@ -92,8 +114,7 @@
     <!--THIS WILL BE A HEADER SIDEBAR-->
     <div class="search-property slidetoggle">
         <div class="wrap">
-            <h1><a href="#" class="close-search"><i class="fa fa-times"></i></a></h1>
-            <?php echo do_shortcode( '[listing_search]' );?>
+            <?php echo do_shortcode( '[listing_search search_id="on" search_location="off" search_house_category="off" search_price="on" search_bed="on" search_bath="on" search_rooms="on"]' );?>
         </div>
     </div>
 

@@ -4,7 +4,7 @@
 	}
 
 	.search-property {
-    	top: 90px;
+    	top: 91px;
 	}
 }
 
@@ -106,6 +106,13 @@ header {
 				}
 			}
 		}
+
+		&>.active {
+			&>a, &>a:focus, &>a:hover {
+			    background-color: $medium-blue;
+			    color:$white;
+			}
+		}
 	}
 
 	.navbar-toggle {
@@ -120,20 +127,20 @@ header {
 
 .search-property {
 	display:none;
-	background: $default-blue;
+	background: $light-blue;
 	color: $white;
 	z-index: 2000;
     position: fixed;
     right: 0;
     width: 100%;
-    top: 0;
+    top: $section-space-md + 20px;
     height:100%;
     color:$white;
 
     a {color:$white;}
 
     .wrap {
-    	padding:$section-space-md;
+    	padding:$section-space-md + 20px $section-space-md;
     }
 
     @media (min-width:180px) {
@@ -145,9 +152,6 @@ header {
     }
 
     form {
-    	padding:$section-space-md;
-    	padding-left:40px;
-    	padding-right:40px;
     	color:$black;
     	font-size: $font-default;
     }
