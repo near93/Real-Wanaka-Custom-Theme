@@ -22,6 +22,16 @@
         line-height: 45px;
         margin-bottom: $section-space-md;
     }
+
+    .nav-pills{
+        @media(min-width:180px){
+            display: none;
+        }
+
+        @media(min-width:1201px){
+            display: block;
+        }
+    }
 }
 
 #featured-property {
@@ -93,7 +103,41 @@
         }
     }
 
+    /*Featured Property - Easy Listing*/
+    .epl-shortcode-listing-feature {
+        .epl-clearfix {
+            clear: none !important;
+        }
+        
+        .epl-listing-post {
+            
+            .property-box {
+                float: none;
 
+                .epl-stickers-wrapper {
+                    width: auto;
+                }
+
+                img {
+                    width: 100%;
+                    height: 221px;
+                }
+
+                .entry-content {
+                    display: none;
+                }
+
+                .entry-title {
+                    margin-top: 10px;
+                }
+            }
+
+            .property-box-left, .property-box-right {
+                width: auto;
+                padding:0;
+            }
+        }
+    }
 
 	.bx-viewport {
 		z-index:500;
@@ -115,8 +159,18 @@
     	}
 
     	.bx-prev {
-    		left: 106px;
+    		left: 10%;
     		position: absolute;
+            
+
+            @media (min-width:180px){
+                display: none;
+            }
+            
+            @media (min-width:518px){
+                display: block;
+                left:5%;
+            }
 
             @media (min-width:910px){
                 left: -30px;
@@ -128,8 +182,17 @@
     	}
 
     	.bx-next {
-    	   right: 106px;
+    	   right: 10%;
     	   position: absolute;
+
+            @media (min-width:180px){
+                display: none;
+            }
+
+            @media (min-width:518px){
+                display: block;
+                right:5%;
+            }
 
             @media (min-width:910px){
                 right: -30px;
@@ -140,6 +203,10 @@
             }
     	}
 	}
+
+    .epl-pagination {
+        display: none;
+    }
 }
 
 #property-alerts {
@@ -147,7 +214,7 @@
     color: $white;
 	padding: $section-space-md 0;
 
-    button {
+    .btn {
         color: #fff;
         border: 1px solid #fff;
     }

@@ -80,6 +80,20 @@ input{
 	padding: $form-space-sm;
 }
 
+input[type="checkbox"], input[type="radio"] {
+	width: 15px;
+    margin: 0;
+}
+
+span {
+	&.wpcf7-list-item {
+		&:first-child {
+			margin-left:0;
+		}
+	}
+}
+
+
 textarea {
 	height: 80px;
     width: 100%;

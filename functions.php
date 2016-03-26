@@ -140,6 +140,12 @@ add_action( 'wp_enqueue_scripts', 'realwanaka_scripts' );
 require get_template_directory() . '/inc/custom-header.php';
 
 /**
+ * Implement the Custom Footer feature.
+ */
+require get_template_directory() . '/inc/custom-footer.php';
+
+
+/**
  * Custom template tags for this theme.
  */
 require get_template_directory() . '/inc/template-tags.php';
@@ -158,3 +164,8 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+function my_epl_unset_additional_features($group) {
+	return;
+}
+add_filter('epl_meta_box_block_epl_additional_features_section_id', 'my_epl_unset_additional_features');

@@ -18,30 +18,35 @@
             <article class="inner-content">
                 <div class="row">
                     <div class="col-xs-12 col-sm-4">
-                        <h3 class="site-title">
-                            <?php bloginfo( 'name' ); ?>
-                        </h2>
+                        <div class="logo">
+                            <?php if ( get_theme_mod( 'site_logo' ) ) : ?>
+                                <a class="site-title" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+                                    <img src="<?php echo get_theme_mod( 'site_logo' ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" >
+                                </a>
+                            <?php else : ?>
+                                <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+                                    <p class="site-title"><?php echo get_bloginfo( 'name' ); ?></p>
+                                </a> 
+                            <?php endif; ?>                            
+                        </div>
                     
-                        <p>PH: 0275 617 235</p>
-                     
                         <ul class="contact social list-unstyled list-inline">
                             <li>
-                                <a href="#" class="btn">
+                                <a href="<?php echo get_theme_mod( 'social_media_setting' ); ?>" class="btn">
                                     <i class="fa fa-facebook"></i>
                                 </a>
                             </li> 
                             <li>
-                                <a href="mailto:sharondonnelly@realwanaka.co.nz" class="btn">
-                                <i class="fa fa-envelope-o"></i>
+                                <a href="mailto:<?php echo get_theme_mod( 'email_setting' ); ?>" class="btn">
+                                    <i class="fa fa-envelope-o"></i>
                                 </a>
                             </li>                                           
-                        </ul>                          
+                        </ul>                                                     
                     </div>
 
                     <div class="col-xs-12 col-sm-8">
-                        <p> Disclaimer: The information on this website has been supplied to us and whilst we have no reason to doubt the accuracy, we cannot guarantee it. All interested parties should make their own inquiries to verify the information.
-                        </p> 
-                        <p><?php bloginfo('name');?> <?php echo date('Y'); ?></p>    
+                        <p><?php echo get_theme_mod( 'textarea_setting' ); ?></p> 
+                        <p class="copyright"><?php bloginfo('name');?> <?php echo date('Y'); ?></p>    
                     </div>
                 </div>
             </article>
@@ -53,3 +58,6 @@
 
 </body>
 </html>
+
+
+

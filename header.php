@@ -23,7 +23,7 @@
 <body <?php body_class(); ?>
 	<div id="page" class="site">
 
-	<header id="masthead" class="site-header" role="banner" style="background:url('<?php echo get_bloginfo('template_directory');?>/img/hero-bg.jpg') no-repeat center center;">
+	<header id="masthead" class="site-header" role="banner" style="background:url('<?php echo header_image(); ?>') no-repeat center center;">
         <nav class="navbar navbar-fixed-top">
             <div class="container-fluid">
                 <button type="button" id="property-search-btn" class="btn pull-right">
@@ -38,11 +38,15 @@
                         <span class="icon-bar"></span>
                     </button>
 					<div class="logo">
-                        <p class="site-title">
-                            <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-                            <img src="<?php echo get_bloginfo('template_directory');?>/img/donnelly-logo.png"/>
+                        <?php if ( get_theme_mod( 'site_logo' ) ) : ?>
+                            <a class="site-title" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+                                <img src="<?php echo get_theme_mod( 'site_logo' ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" >
                             </a>
-                        </p>                        
+                        <?php else : ?>
+                            <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+                                <p class="site-title"><?php echo get_bloginfo( 'name' ); ?></p>
+                            </a> 
+                        <?php endif; ?>                      
                     </div>
 
                 </div>
@@ -69,7 +73,7 @@
                     <div class="row">
                         <div class="col-xs-12 col-sm-8 ">
                             <article class="inner-content">
-                                <h1 class="title">Sharon Donnelly's business is the sale of Real Estate in Wanaka, New Zealand.</h1>  
+                                <h1 class="title"><?php the_title(); ?></h1>  
                             </article>                        
                         </div>
                     </div>

@@ -13,7 +13,8 @@
 function realwanaka_customize_register( $wp_customize ) {
 	$wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
 	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
-	$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
+	$wp_customize->remove_section('colors')->transport         = 'postMessage';
+	$wp_customize->remove_section('background_image')->transport         = 'postMessage';
 }
 add_action( 'customize_register', 'realwanaka_customize_register' );
 

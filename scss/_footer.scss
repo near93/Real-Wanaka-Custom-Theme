@@ -5,12 +5,28 @@ footer {
 		padding: $section-space-md 0;
 	}
 
+	p {
+		margin-top: 0;
+	}
+
+	.logo {
+		margin-top: $section-space-xs - 2;
+		
+		img {
+			width: 100%;
+		}
+	}
+
 	.site-title {
 		margin-top:0;
 	}
+	
+	.contact {
+		margin: $section-space-xs + 7 0 0 ;
+	}
 
-	.social {
-		li {
-		}
+	.copyright {
+		font-size: 12px;
+    	text-decoration: overline;
 	}
 }

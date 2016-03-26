@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  $(".epl-shortcode-listing-feature").addClass("bxSlider"); 
+  $("#featured-property .epl-shortcode-listing-feature").addClass("bxSlider"); 
   
   $('.bxSlider').bxSlider({
     minSlides: 2,
@@ -12,15 +12,15 @@ $(document).ready(function(){
     prevText: '<i class="fa fa-caret-left"></i>'
   });
 
-  $(".show-sm .epl-shortcode-listing-feature").removeClass("bxSlider");
+  $("#featured-property .show-sm .epl-shortcode-listing-feature").removeClass("bxSlider");
 });
 
 $("#property-search-btn").click(function(){
 	$(this).toggleClass("active");
-	$(".search-property").animate({width: 'toggle'}, 300);
+	$(".search-property").animate({width: 'toggle'}, 200);
 });
 
 $(".close-search").click(function(){
-	$(".search-property").animate({width: 'toggle'}, 300);
+	$(".search-property").animate({width: 'toggle'}, 200);
 });
 
