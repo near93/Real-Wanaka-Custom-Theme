@@ -50,11 +50,29 @@ header {
 	}
 
 	li {
+
+		@media (min-width:767px){
+			&:first-child {
+				a {
+					padding-left:0;
+				}
+			}
+    	}
+    	
 		a {
 			text-transform: uppercase;
     		letter-spacing: 2px;
-    		padding: 19.3px 19px;
+    		padding: 19.3px 15px;
 		}		
+	}
+
+	.social {
+		li {
+			padding:0; 
+			a {
+				padding:7px 8px;
+			}
+		}
 	}
 
 	h1 {
@@ -63,13 +81,60 @@ header {
 
 	.logo {
 		margin:$section-space-xs + 4 0;
-    	margin-left: 15px;
+    	margin-left: 0;
     	color:$black;
+
+    	@media (min-width:768px){
+			text-align: center;
+    	}
+
+    	@media (min-width: 1200px){
+			text-align: left;
+    	}
+
+    	img {
+    		@media (min-width:100px){
+				width:100%;
+    		}
+
+    		@media (min-width:768px){
+				width: 150px;
+    		}
+    	}
 	}
 
 	.btn {
 		margin:12px 0 0;
 		font-size: $font-default;
+
+		&:hover {
+			background:transparent;
+			color:$default-blue;
+		}
+	}
+
+	.navbar-nav {
+		@media (min-width: 793px) {
+    		float: none;
+    		text-align: center;
+    		margin:0 auto;
+		}
+
+		@media (min-width:992px){
+			float:left;
+			text-align: left;
+		}
+
+		li {
+			@media (min-width:793px){
+				float:none;
+				display: inline-block;
+			}
+
+			@media (min-width:992px){
+				float:left;
+			}
+		}
 	}
 
 	.navbar-collapse {
@@ -80,8 +145,12 @@ header {
 			}
 
 			@media (min-width:768px){
-				float:right !important;
 				border-top:none;
+			}
+
+			@media (min-width:992px){
+				float: right !important;
+
 			}
 		}
 	}
@@ -97,10 +166,12 @@ header {
     	border-radius: 0;
     	-webkit-box-shadow: none;
     	box-shadow: none;
+    	padding: 1px 0;
 		
 		li {
 			a {
 				color: $black;
+				padding-left: 20px;
 				&:focus, &:hover {
 					background: $white;
 					color: $medium-blue;
@@ -149,7 +220,7 @@ header {
     }
 
     @media (min-width:768px) {
-		max-width: 530px;
+		max-width: 360px;
     }
 
     form {

@@ -9,12 +9,12 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
+	<div id="primary" class="content-area property-page">
 		<div class="container-fluid">
-			<div class="row">
-				<div class="col-sm-8">
-					<main id="main" class="site-main entry-content" role="main">
-
+			<main id="main" class="site-main entry-content" role="main">
+				<div class="search">
+					<?php echo do_shortcode( '[listing_search search_id="off" search_location="on" search_house_category="off" search_price="on" search_bed="on" search_bath="off" search_rooms="off"]' );?>
+				</div>
 						<?php
 						if ( have_posts() ) : ?>
 
@@ -40,11 +40,6 @@ get_header(); ?>
 						endif; ?>
 
 					</main><!-- #main -->
-				</div>
-				<div class="col-sm-4">
-					<?php get_sidebar(); ?>
-				</div>
-			</div>
 		</div>
 	</div><!-- #primary -->
 

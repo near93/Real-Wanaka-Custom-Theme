@@ -33,7 +33,7 @@
                 </div>
                 
             <div class="container">
-                <section class="hide-sm">
+                <section id="featured-slider" class="hide-sm">
                     <?php echo do_shortcode('[listing_feature]');?>
                 </section>
                 

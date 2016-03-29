@@ -25,6 +25,17 @@ footer {
 		margin: $section-space-xs + 7 0 0 ;
 	}
 
+	/*Social Links*/
+	.social {
+		.btn {
+	    	width: 35px;
+	    	height: 35px;
+	    	padding: 7px 9.5px;
+	    	@include border-radius(60px);
+	    	text-align: center;
+		}
+	}
+
 	.copyright {
 		font-size: 12px;
     	text-decoration: overline;

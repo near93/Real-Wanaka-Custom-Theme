@@ -8,6 +8,11 @@ body {
     letter-spacing: 1px;
 }
 
+.no-gutter > [class*='col-'] {
+    padding-right:0;
+    padding-left:0;
+}
+
 .container-fluid {
     padding-right: 8%;
     padding-left: 8%;
@@ -19,7 +24,7 @@ body {
 	}
 
 	@media (min-width:500px){
-    	width: 70%;
+    	width: 89%;
 	}
 
 	@media (min-width:1200px){
@@ -78,6 +83,7 @@ h3 {
 input{
 	width:100%;
 	padding: $form-space-sm;
+	color:$black;
 }
 
 input[type="checkbox"], input[type="radio"] {
@@ -107,6 +113,10 @@ textarea {
 	.epl-search-other {
     	display: none;
 	}
+
+	.in-field {
+		color:$black;
+	}
 }
 
 .title {
@@ -126,13 +136,20 @@ textarea {
 	}
 }
 
+.text-center {
+	@media(max-width:768px){
+    	text-align: left;
+	}
+
+}
+
 /*Content*/
 .content-height {
 	height:$section-space-lg;
 }
 
 /*Button*/
-button, html input[type="button"], input[type="reset"], input[type="submit"], .btn{
+button, html input[type="button"], input[type="reset"], input[type="submit"], .btn, .epl-pagination a, .epl-pagination span, .epl-pagination span.current{
 	background: transparent;
 	color: $default-blue;
 	border:1px solid $default-blue;
@@ -164,19 +181,21 @@ button, html input[type="button"], input[type="reset"], input[type="submit"], .b
 }
 
 .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
-    background-color: $medium-blue;
+    background-color: transparent;
+    color: $medium-blue;
 }
 
-/*Social Links*/
-.social {
-	.btn {
-    	width: 35px;
-    	height: 35px;
-    	padding: 7px 9.5px;
-    	@include border-radius(60px);
-    	text-align: center;
+.nav-pills {
+	li {
+		a {
+			&:hover {
+				background-color: transparent;
+			}
+		}
 	}
 }
+
+
 
 /*Image*/
 .img-full {

@@ -1,5 +1,5 @@
 #hero-page {
-    padding:$section-space-lg 0 $section-space-md;
+    padding:$section-space-lg + 15 0 $section-space-md;
     text-align: center;
     line-height: 12px;
 
@@ -17,17 +17,10 @@
 	padding:$section-space-lg 0;
 }
 
-.property {
-	.entry-content {
-    	padding: 0;
-		.property-box {
-			img {
-    			width: 100%;
-			}
-		}
-	}
-}
-
 .epl-tab-section {
     margin-top: 0;
+}
+
+.tab-content ul, .tab-content ol {
+    padding: 0;
 }

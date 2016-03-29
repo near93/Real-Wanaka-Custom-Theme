@@ -12,11 +12,13 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<div class="container-fluid">
 	<section class="entry-content">
-		<div class="row">
-			<article class="inner-content">
-				<?php the_content(); ?>				
-			</article>			
-		</div>
+		<article class="inner-content">
+			<div class="search">
+				<?php echo do_shortcode( '[listing_search search_id="off" search_location="on" search_house_category="off" search_price="on" search_bed="on" search_bath="off" search_rooms="off"]' );?>
+			</div>
+			<div class="clearfix"></div>
+			<?php the_content(); ?>				
+		</article>			
 	</section>		
 	</div>
 </article><!-- #post-## -->

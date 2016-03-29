@@ -7,10 +7,58 @@
 }
 
 #hero-home {
-    padding:$section-space-lg 0 $section-space-md;
-    
     @media (min-width:100px){
-        padding: $section-space-lg + 120 0 $section-space-md + 40;
+        padding:$section-space-lg + 20 0 $section-space-md;
+        text-align: left;
+    }    
+
+    @media (min-width:768px){
+        padding:$section-space-lg + 100 0 $section-space-md + 40;
+        text-align: center;
+    }
+
+    @media (min-width:992px){
+        padding:$section-space-lg + 160 0 $section-space-md + 100;
+    }
+
+    .title {
+        margin-bottom: $section-space-md;
+    }
+
+    .epl-search-form {
+        @media (min-width:100px){
+            display:none;
+        }
+
+        @media (min-width:767px){
+            display: block;
+        }
+        
+        .epl-search-row-text {
+            float: left;
+            width: 83%;
+        }
+
+        .epl-search-label {
+            text-align: center;
+        }
+
+        .epl-search-submit {
+            margin: 0;
+            float: left;
+            width: 15%;
+            margin-top: 37px;
+        }
+
+        .epl-search-btn {
+            background:$medium-blue;
+            padding:4px;
+            color:$white;
+
+            &:hover {
+                background:$default-blue;
+            }
+        }
     }
 }
 
@@ -114,17 +162,9 @@
             .property-box {
                 float: none;
 
-                .epl-stickers-wrapper {
-                    width: auto;
-                }
-
                 img {
                     width: 100%;
                     height: 221px;
-                }
-
-                .entry-content {
-                    display: none;
                 }
 
                 .entry-title {

@@ -35,6 +35,19 @@ function header_settings($wp_customize) {
 			'settings' => 'site_logo',
 		) 
 	));
+
+	$wp_customize->add_setting( 'theme_header_bg' );
+	
+	$wp_customize->add_control( 
+    new WP_Customize_Image_Control(
+        $wp_customize,'theme_header_bg',array(
+            'label' => 'Header Background Image',
+            'section' => 'title_tagline',
+            'settings' => 'theme_header_bg',
+            'priority' => 2
+        )
+    )
+);
 }
 
 add_action('customize_register', 'header_settings');

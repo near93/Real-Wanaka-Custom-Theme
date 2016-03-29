@@ -23,21 +23,12 @@
 <body <?php body_class(); ?>
 	<div id="page" class="site">
 
-	<header id="masthead" class="site-header" role="banner" style="background:url('<?php echo header_image(); ?>') no-repeat center center;">
+	<header id="masthead" class="site-header" role="banner" style="background:linear-gradient( rgba(0,32,14,0.50), rgba(0,32,14,0.50) ), url('<?php echo get_theme_mod('theme_header_bg'); ?>') no-repeat center center fixed;">
         <nav class="navbar navbar-fixed-top">
-            <div class="container-fluid">
-                <button type="button" id="property-search-btn" class="btn pull-right">
-                    <span><i class="fa fa-search"></i></span>
-                </button>
-                
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-					<div class="logo">
+            <div class="container-fluid"> 
+                <div class="row no-gutter">
+                    <div class="col-xs-4 col-sm-12 col-md-2 col-lg-2">
+                        <div class="logo">
                         <?php if ( get_theme_mod( 'site_logo' ) ) : ?>
                             <a class="site-title" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
                                 <img src="<?php echo get_theme_mod( 'site_logo' ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" >
@@ -47,36 +38,51 @@
                                 <p class="site-title"><?php echo get_bloginfo( 'name' ); ?></p>
                             </a> 
                         <?php endif; ?>                      
+                        </div>
+                    </div>
+                    <div class="col-xs-8 col-sm-12 col-md-1 col-lg-2">
+                        <button type="button" class="property-search-btn show-sm btn pull-right">
+                            <span><i class="fa fa-search"></i></span>
+                        </button>
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>                        
                     </div>
 
-                </div>
-
-                <?php
-                    wp_nav_menu( array(
-                        'menu'              => 'primary',
-                        'theme_location'    => 'primary',
-                        'depth'             => 2,
-                        'container'         => 'div',
-                        'container_class'   => 'collapse navbar-collapse pull-right',
-                        'container_id'      => 'navbar',
-                        'menu_class'        => 'nav navbar-nav',
-                        'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
-                        'walker'            => new wp_bootstrap_navwalker())
-                    );
-                ?>                
+                    <div class="col-xs-12 col-sm-12 col-md-10 col-lg-8">
+                        <button type="button" class="property-search-btn hide-sm btn pull-right">
+                            <span><i class="fa fa-search"></i></span>
+                        </button>
+                        <?php
+                            wp_nav_menu( array(
+                                'menu'              => 'primary',
+                                'theme_location'    => 'primary',
+                                'depth'             => 2,
+                                'container'         => 'div',
+                                'container_class'   => 'collapse navbar-collapse pull-right',
+                                'container_id'      => 'navbar',
+                                'menu_class'        => 'nav navbar-nav',
+                                'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+                                'walker'            => new wp_bootstrap_navwalker())
+                            );
+                        ?>                          
+                    </div>
+                </div>                       
             </div>
         </nav>  
 
         <?php if ( is_page_template( 'page-home.php' )) { ?>
             <section id="hero-home" class="hero">
                 <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-8 ">
-                            <article class="inner-content">
-                                <h1 class="title"><?php the_title(); ?></h1>  
-                            </article>                        
-                        </div>
-                    </div>
+                    <article class="inner-content">
+                        <h1 class="title"><?php the_title(); ?></h1> 
+                    </article>                        
+
                 </div>
             </section>
         <?php } elseif (is_404()) {?>
