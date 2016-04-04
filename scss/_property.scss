@@ -13,14 +13,14 @@
 		margin-top: 20px;
 	}
 
-    .entry-content, .epl-stickers-wrapper, .property-feature-icons, .price, .entry-title-sub {
+    .entry-content, .epl-stickers-wrapper, .property-feature-icons, .entry-title-sub {
         display: none;
     }
 }
 
 .epl-listing-grid-view {
 	.property-box {
-    	.entry-content, .epl-stickers-wrapper, .property-feature-icons, .price, .entry-title-sub {
+    	.entry-content, .epl-stickers-wrapper, .property-feature-icons, .entry-title-sub {
         	display: none;
     	}
 	}
@@ -48,7 +48,7 @@
 	&.epl-property-blog {
 	    margin: 0 15px;
 	    padding: 0 !important;
-	    min-height: 330px;
+	    min-height: 380px;
 
 	    @media (min-width:180px){
 			width:100%;
@@ -67,10 +67,6 @@
 	    @media (min-width:1200px){
 			width:30.3%;
 	    }
-
-	    @media (min-width:1300px){
-			width:30.6%;
-	    }
 	}
 }
 
@@ -78,6 +74,8 @@
 .property-page {
 	.entry-content {
 		.search {
+			margin-bottom: $section-space-sm;
+			
 			@media (min-width:180px){
 				display: none;
 			}

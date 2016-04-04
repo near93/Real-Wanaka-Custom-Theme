@@ -7,8 +7,25 @@
     	float: left;
     	margin: 0 15px;
     	padding: 0 !important;
-    	width: 30.66666%;
-    	min-height: 330px;
+    	min-height: 380px;
+
+	    @media (min-width:180px){
+			width:100%;
+			margin:0;
+	    }
+
+	    @media (min-width:768px){
+			width: 45.3%;
+			margin: 0 15px;
+	    }
+
+	    @media (min-width:992px){
+			width:29.6%;
+	    }
+
+	    @media (min-width:1200px){
+			width:30.3%;
+	    }
 	}
 
 	.property-box-left {

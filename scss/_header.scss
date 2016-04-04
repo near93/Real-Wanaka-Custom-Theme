@@ -130,10 +130,6 @@ header {
 				float:none;
 				display: inline-block;
 			}
-
-			@media (min-width:992px){
-				float:left;
-			}
 		}
 	}
 
@@ -169,6 +165,7 @@ header {
     	padding: 1px 0;
 		
 		li {
+			display: block;
 			a {
 				color: $black;
 				padding-left: 20px;

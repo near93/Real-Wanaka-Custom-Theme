@@ -17,7 +17,8 @@
 				<?php echo do_shortcode( '[listing_search search_id="off" search_location="on" search_house_category="off" search_price="on" search_bed="on" search_bath="off" search_rooms="off"]' );?>
 			</div>
 			<div class="clearfix"></div>
-			<?php the_content(); ?>				
+			<?php the_content(); ?>
+			<div class="clearfix"></div>				
 		</article>			
 	</section>		
 	</div>

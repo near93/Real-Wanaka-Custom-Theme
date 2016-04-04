@@ -8,6 +8,10 @@ body {
     letter-spacing: 1px;
 }
 
+.section-space-sm {
+	height: $section-space-sm;
+}
+
 .no-gutter > [class*='col-'] {
     padding-right:0;
     padding-left:0;
@@ -74,7 +78,7 @@ a {
 	}
 }
 
-h3 {
+.h2, h2, h3 {
 	line-height: 40px;
     font-weight: bold;
     letter-spacing: 2px;
@@ -172,6 +176,18 @@ button, html input[type="button"], input[type="reset"], input[type="submit"], .b
     	background-color: $medium-blue;
     	border-color: $default-blue;
     	color:$white;
+	}
+}
+
+/*Social Links*/
+.social {
+	.btn {
+	    width: 35px;
+	    height: 35px;
+	    padding: 7px 9.5px;
+	    @include border-radius(60px);
+	    text-align: center;
+	    line-height: 2px;
 	}
 }
 
