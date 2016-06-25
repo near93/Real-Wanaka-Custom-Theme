@@ -18,34 +18,6 @@
         </div>
     </section>
 
-    <section id="featured-property">
-        <div class="container-fluid">
-                <div class="row">
-                    <div class="col-xs-9 col-sm-9">
-                        <article class="inner-content">
-                            <h1 class="title">Featured Properties</h1>
-                        </article>                    
-                    </div>
-
-                    <div class="col-xs-3 col-sm-3 hide-sm">
-                        <a href="<?php the_field('all_featured'); ?>" class="view-properties btn btn-primary pull-right">View all</a>
-                    </div>
-                </div>
-                
-            <div class="container">
-                <section id="featured-slider" class="hide-sm">
-                    <?php echo do_shortcode('[listing_feature]');?>
-                </section>
-                
-
-                <section class="show-sm">
-                    <?php echo do_shortcode('[listing_feature limit="1"]');?>
-                    <a href="<?php the_field('all_featured'); ?>" class="view-properties btn btn-primary text-center">View all</a>
-                </section>    
-            </div>             
-        </div>         
-    </section>
-
     <section id="property-alerts" class="text-center">
         <div class="container-fluid">
             <div class="row">
