@@ -76,46 +76,9 @@
             </div>
         </nav>  
 
-    <?php if ( is_page_template( 'page-home.php' )) { ?>
-        <section id="featured-property">
-            <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-xs-9 col-sm-9">
-                            <article class="inner-content">
-                                <h1 class="title">Featured Properties</h1>
-                            </article>                    
-                        </div>
-
-                        <div class="col-xs-3 col-sm-3 hide-sm">
-                            <a href="<?php the_field('all_featured'); ?>" class="view-properties btn btn-primary pull-right">View all</a>
-                        </div>
-                    </div>
-                    
-                <div class="container">
-                    <section id="featured-slider" class="hide-sm">
-                        <?php echo do_shortcode('[listing_feature]');?>
-                    </section>
-                    
-
-                    <section class="show-sm">
-                        <?php echo do_shortcode('[listing_feature limit="1"]');?>
-                        <a href="<?php the_field('all_featured'); ?>" class="view-properties btn btn-primary text-center">View all</a>
-                    </section>    
-                </div>             
-            </div>         
-        </section>
-    <?php } ?>
-    
     <div class="header-bg" style="background:linear-gradient( rgba(0,32,14,0.50), rgba(0,32,14,0.50) ), url('<?php echo get_theme_mod('theme_header_bg'); ?>') no-repeat center center fixed;">
-        <?php if ( is_page_template( 'page-home.php' )) { ?>
-            <section id="hero-home" class="hero">
-                <div class="container-fluid">
-                    <article class="inner-content">
-                        <h1 class="title"><?php the_title(); ?></h1> 
-                    </article>                        
+        <?php if ( is_page( 'page-home.php' )) { ?>
 
-                </div>
-            </section>
         <?php } elseif (is_404()) {?>
             <section id="hero-page" class="hero">
                 <div class="container-fluid">
@@ -148,6 +111,31 @@
             </section>
         <?php } ?>
     </div>
+
+    <?php if ( is_page_template( 'page-home.php' )) { ?>
+        <section id="featured-property">
+            <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xs-9 col-sm-9">
+                            <article class="inner-content">
+                                <h1 class="title">Featured Properties</h1>
+                            </article>                    
+                        </div>
+
+                        <div class="col-xs-3 col-sm-3 hide-sm">
+                            <a href="<?php the_field('all_featured'); ?>" class="view-properties btn btn-primary pull-right">View all</a>
+                        </div>
+                    </div>
+                    
+                <div class="container">
+                    <section>
+                        <?php echo do_shortcode('[listing post_type="property" limit="6" tools_top="on"]');?>
+                    </section>
+                       
+                </div>             
+            </div>         
+        </section>
+    <?php } ?>
   
 	</header><!-- #masthead -->
 

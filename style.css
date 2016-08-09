@@ -244,7 +244,7 @@ header {
   color: #fff; }
   header #featured-property {
     position: relative;
-    padding: 130px 0 80px;
+    padding: 80px 0;
     background: #F5F1ED;
     /*Featured Property - Easy Listing*/ }
     header #featured-property .container {
@@ -488,6 +488,10 @@ header {
 
 .sale-date span {
   font-size: 16px; }
+
+.price .page-price {
+  color: #333;
+  font-weight: bold; }
 
 .property-box img {
   width: 100%; }
